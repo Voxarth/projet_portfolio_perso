@@ -1,0 +1,546 @@
+/* Couleur base de la page
+ ========================= */
+
+body{
+    background-color:tan;
+}
+
+
+/* Header
+ ================================================================================ */
+ 
+.nav{
+    position: absolute;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#nav{
+    display: flex;
+    justify-content: space-evenly;
+    
+    
+}
+
+.nav h2{
+    display: flex;
+    justify-self: left;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 4px 5px black;
+
+}
+
+
+
+
+.burger-menu{
+    font-family: 'Eagle lake';
+    font-size: 120%;
+    width: 70vh;
+    
+    
+    
+}
+
+.burger-menu a{
+    color: whitesmoke;
+    text-shadow: 0px 10px 10px black;
+    text-decoration: none;
+}
+
+
+ .header{
+    background-image: url(img/blacksmith.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    display: flex;
+    
+  }
+  /* Menu "burger"
+   =============== */
+
+   /* Class qui vont avec l'interaction JS
+    ====================================== */
+
+
+.hidden{
+    visibility: hidden;
+
+}
+
+.visible{
+    visibility: visible;
+}
+
+
+/* Media Query pour browser et mobile
+ ==================================== */
+
+ 
+
+@media (min-width: 1000px){
+    #MB{
+        visibility: hidden;
+        
+    }
+    #nav{
+        visibility: visible;
+    }
+}
+
+ @media (max-width: 1000px){
+
+   
+
+    #nav{
+
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .burger-menu{
+        position: fixed;
+        right: 0em;
+    }
+
+    .burger-menu i{
+     color: red;
+     
+    }
+
+
+    .burger-menu i:hover{
+        cursor: pointer;
+
+    }
+
+    .burger-menu i{
+        display: flex;
+        width: 1em;
+        height: 1em;
+        font-size: 200%;
+        justify-self:right;
+        align-self:right;
+        color: whitesmoke;
+        text-shadow: 0px 1px 5px rgb(0, 0, 0);
+        
+        
+    }
+
+    #nav{
+        
+        background-color: rgba(0, 0, 0, 0.247);
+        border-radius: 10%;
+    }
+
+    
+
+ 
+ 
+  }
+
+  /* Centrage de texte et icons
+   ============================= */
+  
+   .header-hello{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+      align-items: center;
+      width: 100%;
+      color: aliceblue;
+   }
+  
+   .header-hello h2{
+       font-size: 4em;
+       font-family: 'Germania one' , sans-serif;
+       text-shadow: 3px 4px 5px black;
+   }
+
+   .header-hello p{
+    font-size: 250%;
+    font-family: 'Eagle lake', sans-serif;
+    text-shadow: 3px 4px 5px black;
+   }
+
+   .social-network{
+       font-size: 2em;
+       color: azure;
+   }
+   .social-network:visited{
+       font-size: 2em;
+       color: azure; 
+   }
+  
+  
+  
+  /* About Me
+   ================================================================================ */
+  
+   .about-big{
+     display: flex;
+     flex-direction: column;
+     background-color:#8a2727;
+   }
+
+   .about-me{
+       padding: 15px;
+   }
+
+   .about-me h2{
+       font-family: 'Germania one';
+   }
+
+   .about-me h6{
+       font-family: 'Eagle lake';
+   }
+
+   .about-me p{
+       font-family: 'Crimson text';
+   }
+
+   .image-princess{
+       width: 20vw;
+       height: 30vh;
+   }
+
+
+   .about-big a{
+       margin: 10px;
+       padding: 5px;
+       background-color: gray;
+       border-radius: 60%;
+       box-shadow: 15px 15px 10px black;
+       color: whitesmoke;
+       text-shadow: 0px 10px 10px black;
+       text-decoration: none;
+
+   }
+   /* Changement d'affichage mobile first
+    ========================== */
+
+   @media (min-width: 1000px){
+    .about-big{
+      display: flex;
+      flex-direction: row;
+      background-color:#8a2727;
+    }
+   }
+
+   @media (max-width: 1000px){
+       .image-princess{
+        width: 50%;
+        height: 50%;
+        display: flex;
+        align-self: center;
+       }
+   }
+
+
+  
+   /* Barres de progression
+    ======================= */
+  
+    
+  /* Web design bar 
+   ================= */
+    .WebDesignBar{
+        font-family: 'Crimson text';
+      background-color: tan;
+      box-shadow: 0 0 0 2px rgb(85, 84, 84);
+      position: relative;
+      width: 25em;
+      height: 1.1em;
+    }
+    
+    .WBbar{
+      background-color: rgba(255, 65, 7, 0.884);
+      position: absolute;
+      height: 1em ;
+      width: 70%;
+    }
+    
+  
+  /* Branding bar 
+   =============== */
+  .BrandingBar{
+    font-family: 'Crimson text';
+    background-color:tan;
+    box-shadow: 0 0 0 2px rgb(85, 84, 84);
+    position: relative;
+    width: 25em;
+    height: 1.1em;
+  }
+  
+  .Bbar{
+    background-color: rgb(197, 176, 80);
+    position: absolute;
+    height: 1em ;
+    width: 55%;
+  }
+  
+  /* Developement Bar
+   =================== */
+  .DevelopementBar{
+    font-family: 'Crimson text';  
+    background-color: tan;
+    box-shadow: 0 0 0 2px rgb(85, 84, 84);
+    position: relative;
+    width: 25em;
+    height: 1.1em;
+  }
+  
+  .Dbar{
+    background-color: rgb(102, 97, 112);
+    position: absolute;
+    height: 1em ;
+    width: 85%;
+  }
+  
+  
+  /* Service
+   ================================================================================== */
+
+   .service-big {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: space-evenly;
+
+   }
+
+   .service-big div{
+       margin: 20px;
+   }
+
+
+
+  .service-big h2{
+       font-size: 4em;
+       font-family: 'Germania one' , sans-serif;
+   }
+
+    .service-big h6{
+        display: flex;
+        align-items: center;
+        font-family: 'Eagle lake';
+        font-size: 1.2em;
+    }
+
+    .service-big p{
+        display: flex;
+        font-family: 'Crimson text';
+        margin: 10px;
+    }
+
+/*  Personalisation de chaque div 
+ ======================= */
+
+/* Service Web Design
+ ==================== */
+
+ .service-WD{
+    background-color:#FFDEAD;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+ .service-WD i{
+     font-size: 2em;
+     background-color: #FFDEAD;
+     color: black;
+     width: 2em;
+     height: 2em;
+     border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     transition: 1s;
+     margin: 15px;
+ }
+
+ .service-WD i:hover{
+    font-size: 2em;
+    background-color:#8B0000;
+    color:brown;
+    box-shadow: 10px 5px 5px gray;
+
+ }
+
+ /* Service Branding
+  ================== */
+
+ .service-branding{
+    background-color:#FFDEAD;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+ .service-branding i{
+     font-size: 2em;
+     background-color: #FFDEAD;
+     color: black;
+     width: 2em;
+     height: 2em;
+     border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     transition: 1s;
+     margin: 15px;
+ }
+
+ .service-branding i:hover{
+    font-size: 2em;
+    background-color:#8B0000;
+    color:brown;
+    box-shadow: 10px 5px 5px gray;
+
+ }
+
+ /* Service Developement
+  ====================== */
+
+ .service-developement{
+    background-color:#FFDEAD;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+ .service-developement i{
+     font-size: 2em;
+     background-color: #FFDEAD;
+     color: black;
+     width: 2em;
+     height: 2em;
+     border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     transition: 1s;
+     margin: 15px;
+ }
+
+ .service-developement i:hover{
+    font-size: 2em;
+    background-color:#8B0000;
+    color:brown;
+    box-shadow: 10px 5px 5px gray;
+
+ }
+
+ /* Service Creative Design
+  ========================= */
+
+ .service-CD{
+    background-color:#FFDEAD;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+ .service-CD i{
+     font-size: 2em;
+     background-color: #FFDEAD;
+     color: black;
+     width: 2em;
+     height: 2em;
+     border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     transition: 1s;
+     margin: 15px;
+ }
+
+ .service-CD i:hover{
+    font-size: 2em;
+    background-color:#8B0000;
+    color:brown;
+    box-shadow: 10px 5px 5px gray;
+
+ }
+
+ /* Service Fully Responsive
+  ========================== */
+
+ .service-FR{
+    background-color:#FFDEAD;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+ .service-FR i{
+     font-size: 2em;
+     background-color: #FFDEAD;
+     color: black;
+     width: 2em;
+     height: 2em;
+     border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     transition: 1s;
+     margin: 15px;
+ }
+
+ .service-FR i:hover{
+    font-size: 2em;
+    background-color:#8B0000;
+    color:brown;
+    box-shadow: 10px 5px 5px gray;
+
+ }
+
+ /* Service Retina Ready
+  ====================== */
+
+ .service-RR{
+    background-color:#FFDEAD;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+ .service-RR i{
+     font-size: 2em;
+     background-color:#FFDEAD ;
+     color: black;
+     width: 2em;
+     height: 2em;
+     border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     transition: 1s;
+     margin: 15px;  
+ }
+
+ .service-RR i:hover{
+    font-size: 2em;
+    background-color:#8B0000;
+    color:brown;
+    box-shadow: 10px 5px 5px gray;
+
+ }
